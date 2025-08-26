@@ -1,0 +1,17 @@
+.layout-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  height: 7vh;
+  line-height: 7vh;
+}
+
+.layout-page .main-content {
+  height: 93vh;
+  background-color: rgba(248, 248, 248, 0.788);
+}

@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "启动后端 (FastAPI)",
+      "type": "shell",
+      "command": "uvicorn main:app --reload --port 8000", // 假设你的 FastAPI 入口文件是 main.py
+      "options": {
+        "cwd": "${workspaceFolder}/backend" // 后端项目路径
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "启动前端 (React)",
+      "type": "shell",
+      "command": "npm start", // React 默认启动命令
+      "options": {
+        "cwd": "${workspaceFolder}/frontend" // 前端项目路径
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "一键启动前后端",
+      "dependsOn": ["启动后端 (FastAPI)", "启动前端 (React)"]
+    }
+  ]
+}

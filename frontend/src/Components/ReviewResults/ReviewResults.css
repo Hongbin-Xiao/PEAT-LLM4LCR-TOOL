@@ -1,0 +1,285 @@
+.review-results-container {
+  width: 100vw;
+  background: #f7f8fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-results-container .main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding: 18px 24px;
+  box-sizing: border-box;
+  width: 100%; /* 确保只在ReviewResults容器内生效 */
+}
+
+.original-text-section,
+.review-results-section,
+.ai-chat-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.original-text-section {
+  flex: 1.2;
+  margin-right: 8px;
+}
+
+.review-results-section {
+  flex: 1.5;
+  margin: 0 8px;
+}
+
+.ai-chat-section {
+  flex: 1;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px); /* 确保与其他栏目高度一致 */
+  min-height: 600px; /* 最小高度 */
+}
+
+.ai-chat-section .ant-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 120px); /* 最大高度限制 */
+}
+
+.ai-chat-section .ant-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  min-height: 0;
+  max-height: calc(100vh - 140px); /* 为输入框留出空间 */
+  overflow: hidden; /* 防止内容溢出 */
+}
+
+.ant-card-body {
+  padding: 12px !important;
+}
+
+/* 原文内容区域样式 */
+.text-content-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden; /* 防止水平滚动 */
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 12px;
+  background: #fafafa;
+  min-height: 0; /* 重要：允许flex子元素收缩 */
+  max-height: calc(100vh - 200px); /* 设置最大高度 */
+}
+
+.text-content {
+  margin: 0 !important;
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: 1.6;
+  font-family: "Consolas", "Menlo", "Monaco", monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 滚动条样式 */
+.text-content-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-content-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.text-content-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.text-content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 审查结果列表样式 */
+.results-list {
+  height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+
+.result-item {
+  border-left: 4px solid #1890ff;
+  max-height: calc(100vh - 250px);
+}
+
+.result-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #f6ffed;
+  border-left: 4px solid #52c41a;
+  border-radius: 4px;
+}
+
+.no-issues {
+  text-align: center;
+  padding: 32px 0;
+}
+
+/* 聊天区域样式 */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  max-height: calc(100vh - 200px); /* 为输入框和标题留出空间 */
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 4px;
+  min-height: 0;
+  max-height: calc(100vh - 250px); /* 设置最大高度，超出时显示滚动条 */
+}
+
+/* 为聊天消息区域添加滚动条样式 */
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.message {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message.user {
+  align-items: flex-end;
+}
+
+.message-content {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 打字指示器 */
+.typing-indicator {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  height: 18px;
+}
+
+.typing-indicator span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #bbb;
+  border-radius: 50%;
+  animation: typing-bounce 1s infinite alternate;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-bounce {
+  to {
+    opacity: 0.3;
+    transform: translateY(-6px);
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .review-results-container .main-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .original-text-section,
+  .review-results-section,
+  .ai-chat-section {
+    margin: 0;
+  }
+}
+
+/* 选项卡样式 - 让选项卡占满整个宽度 */
+.review-results-section .ant-tabs {
+  width: 100%;
+}
+
+.review-results-section .ant-tabs-nav {
+  width: 100% !important;
+  margin-bottom: 16px;
+}
+
+.review-results-section .ant-tabs-nav-list {
+  width: 100%;
+  display: flex;
+}
+
+.review-results-section .ant-tabs-tab {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  margin: 0 !important;
+  border-radius: 0;
+  border-right: 1px solid #d9d9d9;
+}
+
+.review-results-section .ant-tabs-tab:last-child {
+  border-right: none;
+}
+
+.review-results-section .ant-tabs-tab:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.review-results-section .ant-tabs-tab:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.review-results-section .ant-tabs-tab-active {
+  background-color: #1890ff;
+  color: white;
+  border-color: #1890ff;
+}
+
+.review-results-section .ant-tabs-content-holder {
+  padding-top: 8px;
+}
+
+.review-results-section .ant-tabs-tab-btn {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header-left {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+.header-middle {
+  flex: 2;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  background: transparent;
+  border: none;
+  line-height: 64px;
+}
+
+.nav-menu .ant-menu-item {
+  padding: 0 16px;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+.nav-menu .ant-menu-item:hover {
+  background-color: #f0f0f0;
+}

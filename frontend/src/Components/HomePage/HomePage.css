@@ -1,0 +1,384 @@
+/* HomePage专用样式 - 确保不受其他页面影响 */
+.homepage-container {
+  height: 90vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%; /* 确保宽度为100% */
+  max-width: 100%; /* 限制最大宽度 */
+  position: relative; /* 确保定位独立 */
+}
+
+.homepage-container .homepage-content {
+  width: 100%;
+  max-width: 1200px; /* 增加最大宽度，让内容更舒适 */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  max-height: calc(100vh - 40px);
+  margin: 0 auto; /* 确保居中 */
+}
+
+/* 主横幅区域 */
+.homepage-container .hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0px 30px; /* 增加上下内边距 */
+  text-align: center;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+.homepage-container .hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.homepage-container .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  width: 100%;
+}
+
+.homepage-container .main-title {
+  color: white !important;
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-container .subtitle {
+  color: #e0e7ff !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.homepage-container .hero-description {
+  color: #c7d2fe !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 20px !important;
+  text-align: center;
+}
+
+.homepage-container .action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.homepage-container .start-button {
+  height: 44px !important;
+  padding: 0 28px !important;
+  font-size: 15px !important;
+  border-radius: 10px !important;
+  border: none !important;
+  background: linear-gradient(45deg, #4f46e5, #7c3aed) !important;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.homepage-container .start-button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6) !important;
+  background: linear-gradient(45deg, #4338ca, #6d28d9) !important;
+}
+
+.homepage-container .learn-button {
+  height: 44px !important;
+  padding: 0 28px !important;
+  font-size: 15px !important;
+  border-radius: 10px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.homepage-container .learn-button:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  transform: translateY(-2px) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+}
+
+/* 功能展示区域 */
+.homepage-container .features-section {
+  padding: 0px 30px; /* 增加上下内边距 */
+  background: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 0;
+}
+
+.homepage-container .features-container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.homepage-container .features-column,
+.homepage-container .advantages-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-container .section-title {
+  color: #1f2937 !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+}
+
+.homepage-container .features-grid,
+.homepage-container .advantages-grid {
+  margin-bottom: 0 !important;
+}
+
+.homepage-container .feature-card,
+.homepage-container .advantage-card {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  height: 140px; /* 固定高度确保一致性 */
+  min-height: 140px; /* 最小高度 */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homepage-container .feature-card:hover,
+.homepage-container .advantage-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+  border-color: #d1d5db !important;
+}
+
+.homepage-container .feature-content,
+.homepage-container .advantage-content {
+  padding: 16px 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-container .feature-icon,
+.homepage-container .advantage-icon {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.homepage-container .feature-title,
+.homepage-container .advantage-title {
+  color: #1f2937 !important;
+  margin-bottom: 6px !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+.homepage-container .feature-description,
+.homepage-container .advantage-description {
+  color: #6b7280 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .homepage-container .homepage-content {
+    max-width: 1000px;
+  }
+
+  .homepage-container .features-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homepage-container .hero-section {
+    padding: 30px 25px;
+  }
+
+  .homepage-container .main-title {
+    font-size: 2rem !important;
+  }
+
+  .homepage-container .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .homepage-container .section-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .homepage-container .homepage-content {
+    max-width: 900px;
+  }
+
+  .homepage-container .features-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homepage-container .hero-section {
+    padding: 25px;
+  }
+
+  .homepage-container .main-title {
+    font-size: 2rem !important;
+  }
+
+  .homepage-container .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .homepage-container .section-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-container {
+    padding: 10px;
+  }
+
+  .homepage-container .homepage-content {
+    height: auto;
+    min-height: calc(100vh - 20px);
+  }
+
+  .homepage-container .hero-section {
+    padding: 20px 15px;
+  }
+
+  .homepage-container .main-title {
+    font-size: 1.8rem !important;
+  }
+
+  .homepage-container .subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .homepage-container .hero-description {
+    font-size: 0.8rem !important;
+  }
+
+  .homepage-container .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-container .start-button,
+  .homepage-container .learn-button {
+    width: 160px;
+    height: 40px !important;
+    font-size: 14px !important;
+  }
+
+  .homepage-container .features-section {
+    padding: 20px 15px;
+  }
+
+  .homepage-container .section-title {
+    font-size: 1.2rem !important;
+  }
+
+  .homepage-container .feature-icon,
+  .homepage-container .advantage-icon {
+    font-size: 1.6rem;
+  }
+
+  /* 在移动端调整卡片高度 */
+  .homepage-container .feature-card,
+  .homepage-container .advantage-card {
+    height: 120px;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-container {
+    padding: 5px;
+  }
+
+  .homepage-container .homepage-content {
+    height: auto;
+    min-height: calc(100vh - 10px);
+  }
+
+  .homepage-container .hero-section {
+    padding: 15px 10px;
+  }
+
+  .homepage-container .main-title {
+    font-size: 1.6rem !important;
+  }
+
+  .homepage-container .subtitle {
+    font-size: 0.75rem !important;
+  }
+
+  .homepage-container .hero-description {
+    font-size: 0.75rem !important;
+  }
+
+  .homepage-container .start-button,
+  .homepage-container .learn-button {
+    width: 140px;
+    height: 36px !important;
+    font-size: 13px !important;
+  }
+
+  .homepage-container .features-section {
+    padding: 15px 10px;
+  }
+
+  .homepage-container .section-title {
+    font-size: 1.1rem !important;
+  }
+
+  .homepage-container .feature-content,
+  .homepage-container .advantage-content {
+    padding: 12px 8px;
+  }
+
+  /* 在小屏幕上进一步调整卡片高度 */
+  .homepage-container .feature-card,
+  .homepage-container .advantage-card {
+    height: 100px;
+    min-height: 100px;
+  }
+}
