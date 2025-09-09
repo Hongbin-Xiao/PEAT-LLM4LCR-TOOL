@@ -31,7 +31,8 @@ Watch our demonstration video: [YouTube Demo](https://www.youtube.com/watch?v=ey
 
 ## 🏗️ Architecture Overview
 
-<img width="1864" height="1474" alt="architecture_01" src="https://github.com/user-attachments/assets/08cc7e48-bd9c-4100-a3ea-9e67bc2f98f2" />
+<img width="1864" height="1474" alt="softwareX图片_01" src="https://github.com/user-attachments/assets/28c85429-e466-4c3a-ae90-1ce54c6802ef" />
+
 
 
 ## 🚀 Quick Start
