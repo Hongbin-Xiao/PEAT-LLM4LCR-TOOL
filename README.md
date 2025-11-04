@@ -10,7 +10,8 @@
 
 Watch our demonstration video: [YouTube Demo](https://www.youtube.com/watch?v=eyIikQDkv0E)
 
-<img width="1912" height="924" alt="AI问答" src="https://github.com/user-attachments/assets/f8aac6d5-0cfa-45c1-8b2d-8a0c24889b2f" />
+<img width="1873" height="884" alt="main png" src="https://github.com/user-attachments/assets/ef97fe69-5873-4d56-8207-e3ad5dacbc49" />
+
 
 
 ## 🎯 Key Features
