@@ -1,0 +1,23 @@
+[
+  {
+    "index": "9",
+    "category": "Financial Terms",
+    "action": "Tax-Inclusive Price Stipulation",
+    "action_item": "Missing tax-inclusive stipulation in the contract total price",
+    "customized_prompt": "First, locate the section in the contract that stipulates the total price (Note: not every occurrence of “total amount” or “total price” refers to the contract’s total price; only the clause stating the total contract amount qualifies). Ignore all provisions regarding unit price. For the total price provision, check whether it specifies that the total price is tax-inclusive or tax-exclusive.\nIf the contract already clearly stipulates that the total price is tax-inclusive or tax-exclusive, the review passes; output “N/A”. Otherwise, identify the specific issue, provide the relevant original contract text, and give targeted revision suggestions. The output format should be:\n“Issue: Missing tax-inclusive stipulation in the contract total price.\nRelevant original text: XXX.\nRevision suggestion: XXX”,\nwhere the revision suggestion should mainly remind to expressly state in the contract total price whether tax is included."
+  },
+  {
+    "index": "24",
+    "category": "Liability for Breach",
+    "action": "Liability Cap",
+    "action_item": "Liability cap risk",
+    "customized_prompt": "First confirm whether, in the current draft contract text, we are the supplier. If we are the supplier and there is no liability cap clause, a warning should be provided.\nIf we are the supplier and a liability cap is stipulated but is unreasonable—for example, no upper limit is set for compensation, liquidated damages, etc., or the cap is too high (exceeding 30% of actual losses)—a warning should likewise be provided.\nWhen providing the warning, output in the following format:\n“Issue: Unreasonable liability cap.\nRelevant original text: XXX\nRevision suggestion: XXX”,\nand add a liability cap clause to the contract, for example:\n“The parties agree that any compensation liability of either party to the other arising out of this contract (including but not limited to liquidated damages, compensation, etc.) shall not exceed ___ of the actual losses (and in any event shall not exceed 30% of the actual losses).”"
+  },
+  {
+    "index": "7",
+    "category": "Legal References",
+    "action": "Incorrect legal reference",
+    "action_item": "Incorrect legal reference",
+    "customized_prompt": "First confirm whether the contract contains the name of a specific law or laws (usually enclosed in Chinese book title brackets). If there is no law name at all, output \"N/A\" directly. If a referenced document name starts with “GB”, “GB/T”, “JB”, “YD”, “DB”, etc., it is generally a national/industry/local standard, not a law. Ignore such documents entirely.\nIf a genuine law is identified, check whether it has been repealed/invalidated based on the following facts: after the PRC Civil Code took effect on January 1, 2021, laws such as the “General Principles of the Civil Law of the People’s Republic of China”, the “Guarantee Law of the People’s Republic of China”, the “Contract Law of the People’s Republic of China”, the “Property Law of the People’s Republic of China”, the “General Provisions of the Civil Law of the People’s Republic of China”, etc. have become invalid. It is recommended to revise references to invalid laws to the “Civil Code of the People’s Republic of China”.\nIf the law(s) involved in the contract have not become invalid, output \"N/A\". If they have become invalid, provide a specific warning using the format:\n“Issue: xxx\nRelevant original text: XXX.\nRevision suggestion: xxx”."
+  }
+]

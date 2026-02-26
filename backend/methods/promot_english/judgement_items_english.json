@@ -1,0 +1,66 @@
+[
+  {
+    "index": "1",
+    "category": "Contract Parties",
+    "purpose": "Identify the name of the counterparty appearing in the header or footer",
+    "condition": "",
+    "task": "Please list the name(s) of the counterparty that appear in the contract header or footer.",
+    "output": "Please output the relevant content in the following format: No.: xx, Location: xxx, Counterparty name: xxx\n"
+  },
+  {
+    "index": "8",
+    "category": "Financial Terms",
+    "purpose": "Identify uppercase and lowercase representations of the same amount",
+    "condition": "First confirm whether the contract contains any numbers representing amounts of money. If any of the following three conditions is met, no identification is necessary and it should be ignored—Condition 1: there are no numbers representing amounts of money at all; Condition 2: all numbers representing amounts of money are written in Arabic numerals; Condition 3: all numbers representing amounts of money are written in Chinese characters.",
+    "task": "When the same amount is written in both uppercase (Chinese characters) and lowercase (Arabic numerals) in the contract, list them.",
+    "output": "Please output the relevant content in the following format: No.: xx, Amount type: xxx, Uppercase: xxx, Lowercase: xxx\n"
+  },
+  {
+    "index": "12",
+    "category": "Financial Terms",
+    "purpose": "Identify the payment method for the price",
+    "condition": "",
+    "task": "Identify the content in the contract that specifies the method of payment for the price (including relevant time points, payment deadlines, and other information). Regarding payment methods: currently, the common payment methods in sales contracts include lump-sum (one-time) payment, periodic payment, and installment payment. A lump-sum payment means paying the entire amount at once, and generally requires specifying a payment trigger/time point (e.g., within a certain number of working days after arrival inspection acceptance). Periodic payment is mainly used where certain goods need to be purchased on a regular basis. Installment payment is generally used in transactions for products with long production cycles and high costs, and requires clear time points, such as when to pay the down payment, how many times the remaining amount will be settled, and the time limits.\nIf there is no payment method stipulated at all, please output \"N/A\". If there is a stipulation, please list each specific payment method and the relevant original text where the issue appears, one by one.",
+    "output": "Please output the relevant content in the following format: No.: xx, Payment method: xxx, Relevant original text: xxx\n"
+  },
+  {
+    "index": "13",
+    "category": "Financial Terms",
+    "purpose": "Identify the sequence of payment and invoicing",
+    "condition": "First confirm whether our side is the paying party under the current draft contract text. If not, no identification is necessary and it should be ignored.",
+    "task": "If the contract stipulates payment and/or invoice issuance, list the stipulations in chronological order.",
+    "output": "Please output the relevant content in the following format: No.: xx, Type: Payment (or Invoice issuance)\nRelevant original text: xxxxx\n"
+  },
+  {
+    "index": "16",
+    "category": "Performance",
+    "purpose": "Identify the place of performance of the contract",
+    "condition": "",
+    "task": "If the contract stipulates the place of performance, list the place of performance. If the contract does not stipulate a place of performance, you need to clearly flag it. If the place of performance is not stated accurately or completely, list the relevant content.",
+    "output": "Please output the relevant content in the following format: Place of performance: xxx (enter N/A if not stipulated)\nRelevant original text: xxxx\nIssue: None (or Place of performance missing, or Place of performance incomplete)\n"
+  },
+  {
+    "index": "17",
+    "category": "Acceptance",
+    "purpose": "Identify acceptance and quality standards in the contract",
+    "condition": "",
+    "task": "Identify the acceptance and quality standards stipulated in the contract. Generally, sales contracts specify acceptance based on specific i) national standards (documents typically whose names start with “GB” or “GB/T”), ii) industry standards (documents typically whose names start with “JB” or “YD”), iii) local standards (documents typically whose names start with “DB”, etc.), or iv) enterprise standards. If there is no acceptance standard stipulated at all, please output \"N/A\". Otherwise, list each acceptance standard document name and the relevant original text where the issue appears, one by one.",
+    "output": "Please output the relevant content in the following format: No.: xx, Acceptance standard document name: xxx, Relevant original text: xxx \n"
+  },
+  {
+    "index": "22",
+    "category": "Liability for Breach",
+    "purpose": "Identify the amount of liquidated damages",
+    "condition": "",
+    "task": "If the contract stipulates an amount of liquidated damages, list it. If the contract does not stipulate an amount of liquidated damages, you need to clearly flag it. If the agreed liquidated damages exceed 30% of the actual losses, you should flag that the liquidated damages are excessively high.",
+    "output": "Please output the relevant content in the following format: Liquidated damages: xxx (enter N/A if not stipulated), Total contract amount: xxx\nRelevant original text: xxxx\nIssue: None (or Liquidated damages missing, or Liquidated damages excessively high)\n"
+  },
+  {
+    "index": "26",
+    "category": "Dispute Resolution",
+    "purpose": "Identify dispute resolution clause provisions",
+    "condition": "",
+    "task": "If the contract includes dispute resolution provisions, list them. If no dispute resolution clause is stipulated, you need to clearly flag it.",
+    "output": "Please output the relevant content in the following format: No.: xxx; Dispute resolution method: xxx (litigation or arbitration)\nRelevant original text: xxxx\n"
+  }
+]

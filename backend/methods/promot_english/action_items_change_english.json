@@ -1,0 +1,137 @@
+[
+  {
+    "index": "2",
+    "category": "Contracting Parties",
+    "action": "Normative Review of Counterparty Entity",
+    "condition": "First confirm whether the entity name appears in both the contract header and the contract signature block. If it appears in both places, no review is needed; directly return N/A.",
+    "action_item": "Counterparty entity name missing in the header or signature block",
+    "risk": "Missing entity name may affect the validity/effectiveness of the contract.",
+    "solution": "The counterparty entity name was not identified in the header/signature block. It is recommended to supplement the counterparty entity name in full."
+  },
+  {
+    "index": "4",
+    "category": "Contracting Parties",
+    "action": "Normative Review of Our Entity",
+    "condition": "If the entity name is consistent between the header and signature block, both are company names, and there is no direct evidence that the current name is inconsistent with the business registration, then no review is needed; directly return N/A. Note: Only focus on the name of the contracting party. Generic labels such as \"Supplier\", \"Buyer\", \"Seller\", \"Contract Drafter\" can be ignored.",
+    "action_item": "Our entity name is non-standard in the header or signature block",
+    "risk": "Internal departments such as “Purchasing Department” must not be used as the contracting party; otherwise it may affect contract validity and allocation of liabilities.",
+    "solution": "Please use the company’s full legal name or registered name as the contracting party. If there are special circumstances, please provide the articles of association or an authorization document as proof."
+  },
+  {
+    "index": "5",
+    "category": "Contracting Parties",
+    "action": "Normative Review of Our Entity",
+    "condition": "First confirm whether our entity name appears in both the contract header and the contract signature block. If it appears in both places, no review is needed; directly return N/A.",
+    "action_item": "Our entity name missing in the header or signature block",
+    "risk": "Missing entity name may affect the validity/effectiveness of the contract.",
+    "solution": "Our entity name was not identified in the header/signature block. It is recommended to supplement our entity name in full."
+  },
+  {
+    "index": "6",
+    "category": "Contracting Parties",
+    "action": "Consistency Review of Contracting Party Names Between Header and Signature Block",
+    "condition": "",
+    "action_item": "Entity name in the signature block is inconsistent with that in the header",
+    "risk": "The entity name in the signature block was identified as inconsistent with the name in the header.",
+    "solution": "Please verify the contracting party name and fill it in in a standardized manner."
+  },
+  {
+    "index": "10",
+    "category": "Financial Terms",
+    "action": "Scope of Price/Consideration Components",
+    "condition": "",
+    "action_item": "Scope of price/consideration components is missing or requires confirmation",
+    "risk": "The fees included in the contract price and the scope of expenditures should be clearly agreed. Otherwise, disputes may arise during performance due to unclear agreements regarding transaction-related costs.",
+    "solution": "Please confirm, based on the specific transaction and your needs, whether you accept the current agreement on the scope of price components. For common contract types, it is recommended to check whether the following costs are included in the price: (1) Sales of goods: insurance, transportation, packaging, loading/unloading, etc.; (2) Real estate lease: property management fees, gas, heating, repairs, internet, utilities (water/electricity), etc.; (3) Movable property lease: transportation, packaging, loading/unloading, labor, etc.; (4) Software development: travel expenses, IP licensing fees, installation/commissioning, training, maintenance, upgrades, etc.; (5) Construction projects: equipment/material procurement costs, repair/restoration costs, etc."
+  },
+  {
+    "index": "11",
+    "category": "Financial Terms",
+    "action": "Payment Method",
+    "condition": "",
+    "action_item": "The designated receiving account information is inconsistent with the counterparty entity information.",
+    "risk": "The payee/account name is inconsistent with the entity name in the header/signature block. Please confirm whether this involves third-party collection to avoid disputes over payment of the contract price during performance.",
+    "solution": "Please confirm whether the transaction itself involves third-party collection. If not necessary, it is recommended that the payment/collection information be consistent with the contracting party information."
+  },
+  {
+    "index": "14",
+    "category": "Financial Terms",
+    "action": "Invoice Type",
+    "condition": "",
+    "action_item": "VAT special invoice confirmation",
+    "risk": "The invoice type is identified as a VAT special invoice. Small-scale taxpayers cannot issue VAT special invoices directly; if the invoicing party is a small-scale taxpayer, it must apply to the competent tax authority for issuance on its behalf.",
+    "solution": "It is recommended to confirm, based on your needs and the taxpayer type, whether to continue to stipulate issuance of a VAT special invoice."
+  },
+  {
+    "index": "15",
+    "category": "Performance",
+    "action": "Time for Performance",
+    "condition": "",
+    "action_item": "Performance time is unclear or missing",
+    "risk": "No definite performance time was identified. Under the law, “where the performance period is unclear, the obligor may perform at any time and the obligee may also demand performance at any time.” To avoid disputes, it is recommended to supplement clear and specific performance time based on transaction needs. Please also confirm the performance time is fully filled in and meets transaction requirements.",
+    "solution": "It is recommended to supplement/improve clauses based on the contract type and transaction needs. For example: for leases or sales of goods, “performance time” may be the delivery time of the leased item or goods; for service contracts, it may be the service period, e.g., \"Service term: ___ years, from ___/___/___ to ___/___/___.\"; for construction contracts, it would be the completion/acceptance time, e.g., \"Completion date: by ___/___/___.\" Suggested delivery date: ___/___/___."
+  },
+  {
+    "index": "18",
+    "category": "Acceptance",
+    "action": "Acceptance Matters",
+    "condition": "",
+    "action_item": "Measures for handling failed acceptance are missing or require confirmation",
+    "risk": "Please confirm whether the measures for handling failed acceptance are complete, reasonable, and meet our needs.",
+    "solution": "If we are the supplier/seller, it is recommended to conduct appearance and quantity acceptance upon delivery, and quality acceptance within 5 days after delivery. If no objection is raised during the acceptance period, it shall be deemed that there is no quality issue and acceptance is passed. Conversely, if we are the buyer, it is recommended: (1) If the goods fail acceptance, the buyer has the right to reject the goods and raise a written objection; the seller shall provide a written reply within ___ days from receiving the buyer’s issues. If the seller acknowledges the issues, the seller shall handle returns/exchanges and bear all costs arising therefrom. (2) During acceptance, if the service work or deliverables contain errors/defects or do not conform to the contract, Party B shall immediately take corrective/supplementary measures or other remedies required by Party A, and negotiate a new acceptance time. (3) If acceptance fails, Party A shall issue a written non-conformance opinion to Party B. Party B shall, within ___ days after receipt, modify/improve the delivered items per Party A’s opinion and re-apply for acceptance. If the second acceptance still fails, Party A has the right to terminate the contract, and Party B shall bear liability for breach pursuant to the contract."
+  },
+  {
+    "index": "21",
+    "category": "Confidentiality",
+    "action": "Confidentiality Clause",
+    "condition": "Confidential information under this contract refers to any technical, financial, commercial, or other information owned by either party and its affiliates and regarded by that party as confidential; it is not known to the public, can bring economic benefits, has practical utility, and has been subject to protective measures; and it shall be used only for the purpose of performing this contract and shall be kept confidential and not disclosed. However, information that has been publicly known or information that must be accessed by a public authority in the exercise of its functions is excluded. First, confirm whether the current confidentiality clause is complete, reasonable, and meets transaction needs; it is recommended to focus on the scope of confidential information, whether the confidentiality obligor is one party only, the confidentiality period, and liability for breach of confidentiality, etc. Note that the confidentiality period may leave blanks for manual entry of a specific time period. If these items are already agreed, no review is needed; directly enter \"N/A\".\nOtherwise,",
+    "action_item": "Confidentiality clause is missing or requires confirmation",
+    "risk": "If either party discloses the cooperation content and the trade secrets involved in this contract to any third party, it may cause losses to the other party and compensation liability may arise.",
+    "solution": "Both parties and their relevant personnel shall keep confidential the cooperation content and the specific content of this contract. Relevant personnel include but are not limited to directors, supervisors, senior management, employees, consultants, agents, and advisors of the contracting party and its affiliates. The confidentiality obligation term is throughout the performance of the contract and for ____ years after termination. If any part of this contract is deemed invalid or unenforceable, it shall not affect the validity of the confidentiality clause. Without the other party’s prior written consent, no party may disclose the cooperation content and the trade secrets involved in this contract to any third party; otherwise, the party shall be liable to compensate for losses caused to the other party."
+  },
+  {
+    "index": "23",
+    "category": "Liability for Breach",
+    "action": "Damages Compensation",
+    "condition": "",
+    "action_item": "Review of scope of damages compensation",
+    "risk": "Please confirm, based on transaction needs, whether the scope of damages should include indirect losses (wording such as: all losses / all costs / loss of expected profits / attorneys’ fees / travel expenses, etc.). Depending on whether we are the liable party under the contract, such an arrangement may increase our liability or may be insufficient to cover expected losses.",
+    "solution": "If you are the liable party, to avoid invalid provisions or additional losses, it is recommended to narrow the scope of damages. If you are the counterparty to liability, please confirm whether the scope can cover the relevant losses."
+  },
+  {
+    "index": "25",
+    "category": "Force Majeure",
+    "action": "Force Majeure Clause",
+    "condition": "",
+    "action_item": "Force majeure clause is missing or requires confirmation",
+    "risk": "Please confirm whether the current force majeure clause is clear and meets transaction needs. Note: Although force majeure is a statutory ground for exemption, where the contract does not stipulate force majeure, the risk of disputes will increase regarding whether a situation constitutes force majeure, how responsibilities are allocated, and how the transaction proceeds. Therefore, it is recommended to include a dedicated force majeure clause to improve predictability and risk control in performance, in light of legal provisions and the nature/risks of the transaction. (1) If the agreed scope of force majeure is appropriately broader than the statutory scope, it is generally still considered valid, as an additional exemption clause, unless the extended part violates public order and good morals.\n(2) Agree on notification and proof obligations of the party affected by force majeure, to provide clear guidance and constraints on conduct after occurrence; (3) Agree on how the transaction proceeds after force majeure to avoid subsequent disputes.",
+    "solution": "Force majeure under this contract refers to any event occurring after execution of the contract that could not be foreseen at the time of signing, whose occurrence and consequences cannot be avoided or overcome, and that hinders any party from fully or partially performing, including but not limited to earthquakes, typhoons, floods, fires, policy changes, wars, interruption of international or domestic transportation, epidemics/pandemics, and other events recognized as force majeure under PRC law or general international commercial practice. The party claiming force majeure shall promptly notify the other parties in writing and, within fifteen (15) days thereafter, provide sufficient evidence proving the occurrence and duration of the force majeure. If a force majeure event occurs and affects a party’s performance of its obligations, it may suspend performance during the period of delay caused by the force majeure without being deemed in breach, and losses arising therefrom shall be borne by the parties in accordance with law, fairness, and the principle of good faith. If a force majeure event occurs, the parties shall immediately consult with each other to find a fair solution and shall make all reasonable efforts to minimize the impact of force majeure."
+  },
+  {
+    "index": "27",
+    "category": "Dispute Resolution",
+    "action": "Real Estate Dispute Resolution Clause",
+    "action_item": "Where disputes involve real property, exclusive jurisdiction should lie with the court at the location of the real property; confirm the agreed litigation venue/court.",
+    "condition": "First confirm whether the contract content involves real property (e.g., land, buildings, fixed facilities, etc.). If the contract does not involve real property, the review passes.",
+    "risk": "Otherwise, if the contract involves real property (e.g., land, buildings, fixed facilities, etc.) and it does not stipulate where the court litigation should be filed for real-property-related disputes, there is a risk.",
+    "solution": "Please first list what real property is mentioned in the contract. Then supplement the clause as suggested below. Suggestion 1: Any disputes arising during performance shall be resolved through friendly negotiation; if negotiation fails, the parties shall, in accordance with relevant PRC laws, submit the dispute to the people’s court at the location of the house for litigation. Suggestion 2: Any disputes arising during performance shall be resolved through friendly negotiation; if negotiation fails, either party may file a lawsuit with the competent people’s court at the location of the house. Suggestion 3: Any and all disputes arising from the performance of or related to this contract shall be resolved through friendly negotiation; if negotiation fails, either party may file a lawsuit with the people’s court at the project location."
+  },
+  {
+    "index": "28",
+    "category": "Contract Form",
+    "action": "Conditions for Contract Effectiveness",
+    "action_item": "Conditions for contract effectiveness are missing",
+    "condition": "First confirm whether the contract stipulates conditions for effectiveness, such as “This contract becomes effective upon signature and seal by both parties’ representatives” or “This contract becomes effective on/after XX/XX/XXXX,” which are proper stipulations. Note: Only effectiveness conditions are needed; termination conditions are not required. If there is already a clear stipulation, no review is needed; directly enter \"N/A\".\nOtherwise,",
+    "risk": "The contract lacks an effectiveness condition clause, which entails risks.",
+    "solution": "Suggestion 1: This contract becomes effective on the date of signature and seal by both parties. Suggestion 2: The parties agree that this contract becomes effective on ___/___/____. Suggestion 3: This contract becomes effective on the date it is signed by the legal representative or authorized representative of both parties and stamped with the official seal, and terminates after the contract content is fully performed."
+  },
+  {
+    "index": "29",
+    "category": "Contract Form",
+    "action": "Contract Signing Date",
+    "condition": "",
+    "action_item": "Review and confirm the signing date",
+    "risk": "Please confirm whether the contract signing date is fully filled in according to the actual signing date. The signing date should not be earlier than the current review time to avoid backdating risks. If the signing date is close to the current review time, it is recommended to confirm whether the parties can reach agreement on the contract content before the signing date.",
+    "solution": "Suggestion 1: This contract is signed on __/__/____ at __. Suggestion 2: Contract signing date: __/__/____."
+  }
+]

@@ -1,0 +1,7 @@
+The content between the two "---" lines below is a non-template sales contract. This contract was drafted by the business department of an enterprise and has not been reviewed by finance or legal professionals, so it may contain high-risk clauses that could harm the interests of the contracting party.
+You are an experienced lawyer with solid theoretical grounding, and you are now going to review this contract for the business department.
+This review will be conducted item by item. You now need to determine whether the contract has the issue of ${action_item}.
+${customized_prompt}
+---
+${content}
+---

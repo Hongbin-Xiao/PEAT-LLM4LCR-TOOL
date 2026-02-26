@@ -1,0 +1,58 @@
+[
+  {
+    "index": "19-20_1",
+    "category": "Intellectual Property",
+    "action_items": [
+      "Missing or uncertain IP ownership provisions",
+      "Missing or uncertain IP non-defect warranty and infringement liability provisions"
+    ],
+    "purpose": "Confirm whether the contract contains any IP-related provisions.",
+    "task": "Determine whether the contract contains any content involving intellectual property.",
+    "attention": "",
+    "output": "If IP-related content exists, output “YES”; otherwise output “NO”, and provide the corresponding reason."
+  },
+  {
+    "index": "19-20_2",
+    "category": "Intellectual Property",
+    "action_items": [
+      "Missing or uncertain IP ownership provisions"
+    ],
+    "purpose": "Confirm whether the contract contains provisions related to ownership of pre-existing intellectual property.",
+    "task": "Identify IP-related content in the contract and confirm whether the contract has clearly stipulated the ownership of pre-existing IP. “IP ownership provisions” means which party to the contract owns the rights. Ownership may be stipulated as belonging to Party A, belonging to Party B, or jointly owned by both parties. It may also be written as belonging to the buyer or belonging to the seller. In any case, it must clearly describe who owns the IP.",
+    "attention": "\n#Attention: Note one important point: do not confuse ownership of documents/materials with ownership of intellectual property. Sometimes a contract stipulates ownership of materials such as manuals, technical documents, or design drawings, but does not stipulate the ownership of the IP embodied in those materials. In such cases, it is still treated as having no pre-existing IP ownership provision.\n",
+    "output": "If there is a provision on ownership of pre-existing IP, output “YES”; otherwise output “NO”, and provide the corresponding reason."
+  },
+  {
+    "index": "19-20_3",
+    "category": "Intellectual Property",
+    "action_items": [
+      "Missing or uncertain IP ownership provisions"
+    ],
+    "purpose": "Confirm whether the contract contains provisions related to ownership of newly created intellectual property.",
+    "task": "Identify IP-related content in the contract and confirm whether the contract has clearly stipulated ownership of IP newly created based on pre-existing IP. “IP ownership provisions” means which party to the contract owns the rights. Ownership may be stipulated as belonging to Party A, belonging to Party B, or jointly owned by both parties. It may also be written as belonging to the buyer or belonging to the seller. In any case, it must clearly describe who owns the IP.",
+    "attention": "\n#Attention: Be sure to distinguish existing/pre-existing IP from new IP newly generated based on such existing/pre-existing IP. Sometimes a contract mentions existing IP but does not stipulate ownership of new IP created based on it. In such cases, it is still treated as having no newly created IP ownership provision.\n",
+    "output": "If there is a provision on ownership of newly created IP, output “YES”; otherwise output “NO”, and provide the corresponding reason."
+  },
+  {
+    "index": "19-20_4",
+    "category": "Intellectual Property",
+    "action_items": [
+      "Missing or uncertain IP non-defect warranty and infringement liability provisions"
+    ],
+    "purpose": "Confirm whether, under the contract, our side is Party A and also the purchasing party.",
+    "task": "Identify whether our side, as a party to the contract, is both Party A and the purchaser/buyer.",
+    "attention": "",
+    "output": "If our side is both Party A and the purchaser/buyer, output “YES”; otherwise output “NO”, and provide the corresponding reason."
+  },
+  {
+    "index": "19-20_5",
+    "category": "Intellectual Property",
+    "action_items": [
+      "Missing or uncertain IP non-defect warranty and infringement liability provisions"
+    ],
+    "purpose": "Confirm whether the contract includes an IP non-defect warranty.",
+    "task": "Confirm whether the contract includes an IP non-defect warranty. The “defects” here mainly refer to the possibility that the intellectual property agreed between the buyer and seller (Parties A and B) may infringe any third party’s copyright, trademark right, patent right, trade secret, etc. An “IP non-defect warranty” means the buyer requires the seller to warrant that the IP in the sales contract is free from defects; if defects arise, the buyer may claim damages from the seller. In sales contracts, IP non-defect warranty clauses are commonly expressed in multiple ways: 1) “own independent IP rights”, i.e., the buyer requires the seller to own independent IP rights in the subject matter. “Independent IP rights” means the subject matter is independently designed, developed, and manufactured by the seller, and the related IP has been applied for and obtained by the seller, or the related IP has been purchased by the seller, so that the seller substantively has the right to implement/use it. 2) “does not infringe others’ IP”, i.e., the buyer requires the seller to ensure the subject matter does not infringe any third party’s IP. 3) “obtain an IP license”, i.e., where others may own relevant IP, the buyer requires the seller to obtain authorization or a license from such third parties.",
+    "attention": "",
+    "output": "If an IP non-defect warranty exists, output “YES”; otherwise output “NO”, and provide the corresponding reason."
+  }
+]
